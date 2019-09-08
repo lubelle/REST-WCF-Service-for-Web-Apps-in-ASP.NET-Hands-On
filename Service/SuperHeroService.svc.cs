@@ -14,6 +14,7 @@ namespace SuperHeroDB.Service
         //      add include the following line in the operation body:
         //      WebOperationContext.Current.OutgoingResponse.ContentType = "text/xml";
 
+        //[OperationContract]
         [OperationContract, WebGet(ResponseFormat = WebMessageFormat.Json)]
         public string DoWork()
         {
